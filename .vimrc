@@ -33,4 +33,4 @@ map <C-o> :NERDTreeToggle<CR>
 set mouse=a
 set iskeyword-=_
 set clipboard=unnamed
-colorscheme badwolf
+colorscheme monokai
