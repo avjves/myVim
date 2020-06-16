@@ -18,10 +18,14 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'tpope/vim-surround'
 " NERD TREE
 Plugin 'preservim/nerdtree'
+" NERD Commenter
+Plugin 'scrooloose/nerdcommenter'
 " Indent settings
 Plugin 'editorconfig/editorconfig-vim'
 " Color scheme
 Plugin 'sjl/badwolf'
+" Typescript
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -31,6 +35,10 @@ let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
 map ; :Files<CR>
 map <C-o> :NERDTreeToggle<CR>
 set mouse=a
+set number
 set iskeyword-=_
 set clipboard=unnamed
 colorscheme monokai
+nnoremap <SPACE> <Nop>
+filetype plugin on
+let mapleader=" "
