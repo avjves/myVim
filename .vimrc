@@ -39,6 +39,7 @@ map <C-o> :NERDTreeToggle<CR>
 set number
 set iskeyword-=_
 set clipboard=unnamed
+set background=dark
 colorscheme gruvbox
 nnoremap <SPACE> <Nop>
 filetype plugin on
