@@ -34,6 +34,7 @@ filetype plugin indent on    " required
 let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
 
 map ; :Files<CR>
+map _ :GFiles<CR>
 map <C-o> :NERDTreeToggle<CR>
 set number
 set iskeyword-=_
