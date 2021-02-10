@@ -1,4 +1,4 @@
-sudo apt install vim-nox 
+sudo apt install vim-nox -y
 cd ~
 wget https://raw.githubusercontent.com/avjves/myVim/lite/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
