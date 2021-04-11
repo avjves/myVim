@@ -27,6 +27,7 @@ Plugin 'sjl/badwolf'
 " Typescript
 Plugin 'leafgarland/typescript-vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'taglist.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
