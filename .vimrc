@@ -17,7 +17,7 @@ Plugin 'tpope/vim-eunuch'
 " Surrounds selections with different tags
 Plugin 'tpope/vim-surround'
 " NERD TREE
-Plugin 'preservim/nerdtree'
+"Plugin 'preservim/nerdtree'
 " NERD Commenter
 Plugin 'scrooloose/nerdcommenter'
 " Indent settings
@@ -30,13 +30,24 @@ Plugin 'morhetz/gruvbox'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+function! TagJumpPython()
+        let l:orig_keyword = &iskeyword
+        set iskeyword+=_
+        let l:word = expand("<cword>")
+        let &iskeyword = l:orig_keyword
+        execute "tjump " . l:word
+endfunction
+
+nmap <C-X> :<C-u>call TagJumpPython()<CR>
+
+
 "" youcompleteme key binding
 let g:ycm_key_list_stop_completion = ['<C-y>', '<CR>']
 
 map ; :Files<CR>
 map _ :GFiles<CR>
-map <C-o> :NERDTreeToggle<CR>
 set number
+set mouse=a
 set iskeyword-=_
 set clipboard=unnamed
 set background=dark
