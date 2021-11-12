@@ -1,3 +1,4 @@
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 sudo apt install build-essential cmake python3-dev  -y
 sudo apt install python3-neovim -y
 cd ~
@@ -10,3 +11,5 @@ cd colors
 wget https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim
 cd ../
 nvim +PluginInstall +qall
+cd
+echo "alias vim=nvim" >> .bashrc
